@@ -1,10 +1,10 @@
 {
-  "name": "@overwolfp/brawl-stars-assets",
+  "name": "brawl-stars-assets",
   "version": "1.0.0",
   "description": "Game assets mixed with different icons, for usage across products",
+  "private": true,
   "scripts": {
-    "optimize": "node optimize.js",
-    "prepublishOnly": "npm run optimize"
+    "optimize": "node optimize.js"
   },
   "devDependencies": {
     "husky": "^3.0.3",

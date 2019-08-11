@@ -22,10 +22,15 @@ Optimization plugins installed:
 
 ### Example Usage
 
-1. Install 
+1. Add package to package.json 
 
-```
-$ npm i @overwolfp/brawl-stats-assets --save
+```js
+{
+  "dependencies": {
+    // ...
+    "brawl-stars-assets": "overwolfmobile/brawl-stars-assets#commit"
+  }
+}
 ```
 
 2. Include this module to your build tool search paths (webpack / metro).
