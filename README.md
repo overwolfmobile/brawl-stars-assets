@@ -1,6 +1,6 @@
 ## Brawl Stars Game Assets
 
-This repository contains all game assets in an optimized form. 
+This repository contains all game assets in an optimized form````. 
 
 Each picture for convenience has an id that matches the data that we get from the API or game files. 
 
