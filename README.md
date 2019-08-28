@@ -1,6 +1,6 @@
 ## Brawl Stars Game Assets
 
-This repository contains all game assets in an optimized form, and is available as an npm module. 
+This repository contains all game assets in an optimized form. 
 
 Each picture for convenience has an id that matches the data that we get from the API or game files. 
 
@@ -12,7 +12,6 @@ Pictures can be presented in two formats:
 Optimization of images takes place in 3 stages:
 
 - Before commit (lint-staged + husky)
-- Before publishing the package (prepublish npm hook)
 - Manually by the developer
 
 Optimization plugins installed:
@@ -22,21 +21,10 @@ Optimization plugins installed:
 
 ### Example Usage
 
-1. Add package to package.json 
+1. Add this repository as git submodule
+
+2. Require images directly from module
 
 ```js
-{
-  "dependencies": {
-    // ...
-    "brawl-stars-assets": "overwolfmobile/brawl-stars-assets#commit"
-  }
-}
-```
-
-2. Include this module to your build tool search paths (webpack / metro).
-
-3. Require images directly from module
-
-```js
-const shellyIcon = require('./assets/brawler-icons/16000000.png')
+const shellyIcon = require('../submodule/path/assets/brawler-icons/16000000.png')
 ```
